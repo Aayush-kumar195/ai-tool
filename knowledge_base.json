@@ -1,0 +1,654 @@
+{
+  "entries": [
+    {
+      "id": "kb-init-1",
+      "topic": "JARVIS Autonomous Learning System",
+      "summary": "JARVIS possesses an autonomous internet research core capable of gathering real-time data from DuckDuckGo, Wikipedia, and web articles.",
+      "keyFacts": [
+        "JARVIS can autonomously search the web using DuckDuckGo and Wikipedia APIs.",
+        "Discovered facts are indexed into a structured knowledge base with source citations and timestamps.",
+        "Relevant knowledge is dynamically retrieved and injected during conversations."
+      ],
+      "sourceUrls": [
+        "https://duckduckgo.com",
+        "https://wikipedia.org"
+      ],
+      "category": "Core Architecture",
+      "learnedAt": "2026-08-29T06:00:00.000Z",
+      "confidence": 1
+    },
+    {
+      "id": "kb-1787984190049",
+      "topic": "Webb Space Telescope",
+      "summary": "The James Webb Space Telescope (JWST) is a space telescope designed to conduct infrared astronomy. It is the largest telescope in space, and is equipped with high-resolution and high-sensitivity instruments, allowing it to view objects too old, distant, or faint for the Hubble Space Telescope. This enables investigations across many fields of astronomy and cosmology, such as observation of the first stars and the formation of the first galaxies, and detailed atmospheric characterization of potentially habitable exoplanets.",
+      "keyFacts": [
+        "James Webb Space Telescope Category",
+        "Collier Trophy – to JWST in 2023.",
+        "Lunar Crater Radio Telescope - proposed telescope on the far side of the Moon in a crater.",
+        "Nancy Grace Roman Space Telescope – planned launch no later than May 2027.",
+        "New Worlds Mission – proposed occulter for the JWST.",
+        "James Webb Space Telescope Webb is the premier observatory of the next decade, serving thousands of astronomers worldwide. It studies every phase in the history of our Universe."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Webb_Space_Telescope",
+        "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+        "https://duckduckgo.com/c/James_Webb_Space_Telescope",
+        "https://duckduckgo.com/Collier_Trophy"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T06:16:30.049Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1787984601427",
+      "topic": "about quantum computers",
+      "summary": "IBM quantum computer demo at ITU WTSA 2024 in Delhi Bloch sphere representation of a qubit. The state is a point on the surface of the sphere, partway between the poles, and . A quantum computer is a computer that represents and processes information using quantum states. Quantum computations exploit phenomena such as superposition, interference, and entanglement. Quantum computers have the ... Quantum computers will not replace our familiar \"classical\" computers. Rather, the two types of machines could work together to solve problems that stymie classical computers, potentially supercharging scientific research in fields such as materials and drug discovery, giving a boost to industry and upending cybersecurity as we know it.",
+      "keyFacts": [
+        "Quantum computing is a rapidly-emerging technology that harnesses the laws of quantum mechanics to solve problems too complex for classical computers.",
+        "Conclusion Quantum computing harnesses the laws of quantum mechanics for complex problem solving.There are many software and hardware tools like quantum hardware platforms, SDK's, simulators in market that help to execute quantum algorithms.",
+        "A quantum computer is a device that employs properties described by quantum mechanics to enhance computations. Plans for building quantum computers have been proposed; although several demonstrate the fundamental principles, none is beyond the experimental stage.",
+        "Discover interesting facts about quantum computers, how they differ from classical computers, and what sort of fields they'll be used in.",
+        "Quantum computing - Wikipedia Jump to content From Wikipedia, the free encyclopedia Computer hardware technology that uses quantum mechanics IBM quantum computer demo at ITU WTSA 2024 in Delhi Bloch sphere representation of a qubit.",
+        "The state | ψ ⟩ = α | 0 ⟩ + β | 1 ⟩ {\\displaystyle |\\psi \\rangle =\\alpha |0\\rangle +\\beta |1\\rangle } is a point on the surface of the sphere, partway between the poles, | 0 ⟩ {\\displaystyle |0\\rangle } and | 1 ⟩ {\\displaystyle |1\\rangle } ."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Quantum_computing",
+        "https://www.nist.gov/quantum-information-science/quantum-computing-explained",
+        "https://www.ibm.com/think/topics/quantum-computing",
+        "https://www.geeksforgeeks.org/blogs/introduction-quantum-computing/"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T06:23:21.427Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1787984671362",
+      "topic": "about hacking",
+      "summary": "Learn in-demand cybersecurity skills from Google on Coursera. Get top-rated Coursera courses at just ₹1699. Start now! A commonly used hacking definition is the act of compromising digital devices and networks through unauthorized access to an account or computer system. Hacking is not always a malicious act, but it is most commonly associated with illegal activity and data theft by cyber criminals. But what is hacking in a cyber security context? Hacking in cyber security refers to the misuse of devices like ...",
+      "keyFacts": [
+        "Learn in-demand cybersecurity skills from Google on Coursera. Get top-rated Coursera courses at just ₹1699. Start now!",
+        "Hacking is the process of finding some security holes in a computer system or network in order to gain access to personal or corporate information. One example of computer hacking is the use of a password cracking technique to gain access to a computer system.",
+        "Hacking (also called cyber hacking) is the use of unconventional or illicit means to gain unauthorized access to a digital device, computer system or computer network.",
+        "What is hacking? Learn the types, five-phase methodology, tools, and legal limits with hands-on labs. A 2026 beginner's guide from working pentesters.",
+        "What is a hacker? Read about hacking, hackers and hacker types. Learn how to protect yourself from hackers and hacking today.",
+        "Hacking is the act of gaining unauthorized access to data in a system or computer. Learn about how hacking works, why people hack & hacking prevention."
+      ],
+      "sourceUrls": [
+        "https://duckduckgo.com/y.js?ad_domain=coursera.org&ad_provider=bingv7aa&ad_type=txad&click_metadata=ZggTY92YuTj%2DMPFcajdLvSwrLLzcwTkASc%2Dw5XKEC_0vcCODv2rtMDi3Hn67t4RvWeQ_v5offvBnKA0YIirATqK0qNPWZtu5WQwQ8vAtx7z%2D2Y0D1jeumF5z73MhsLrZvnSvICSl_NbW0MrwF4yh6_C7G5wGR2UZtqfgtn8qiD4.U0cEScK3sc6GYIZeEcCGdw&rut=b582c8a5e432b3b1e8cd67e190274a6b367f1dc0da82b2b573e1cc71c120bd11&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8GWiqQvYQb3ZhkZ6nmyb6uzVUCUxQf5iwYUZI34%2DLhkm60jnNeZICYRJNcSpBG%2D_aYT2DQCDofWfT7lFCOSNFV%2D6ybNhjCNkYQIMxuCT5pwZfsMoWs9CN6nAVN3cNEZ8kg42nR5kjy3OZo40XKyU4CuUN_QZJk7jrtwcQBY_dM81GXjjHHWE5HbQiNHmOOvAcKYwkxX6EyFRA474RUE5jko_NPYM%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuY291cnNlcmEub3JnJTJmcHJvZmVzc2lvbmFsLWNlcnRpZmljYXRlcyUyZmdvb2dsZS1jeWJlcnNlY3VyaXR5JTNmdXRtX21lZGl1bSUzZHNlbSUyNnV0bV9zb3VyY2UlM2RiZyUyNnV0bV9jYW1wYWlnbiUzZGIyY19pbmRpYV9nb29nbGUtY3liZXJzZWN1cml0eV9nb29nbGVfZnRjb2ZfcHJvZmVzc2lvbmFsLWNlcnRpZmljYXRlc19jeF9kcl9iYXVfYmdfcG1heF9wcl9pbl9hbGxfbV94XzI1LTA1X3glMjZjYW1wYWlnbmlkJTNkNjYzNDY1NDU4JTI2YWRncm91cGlkJTNkMTI1Nzg0MjY1MDc3MjgzMCUyNmRldmljZSUzZGMlMjZrZXl3b3JkJTNkd3d3LmNvdXJzZXJhLm9yZyUyNm1hdGNodHlwZSUzZGIlMjZuZXR3b3JrJTNkcyUyNmRldmljZW1vZGVsJTNkJTI2YWRwb3NpdGlvbiUzZCUyNmNyZWF0aXZlaWQlM2Q3ODYxNTI5ODU2MTQyMiUyNmFkZ3JvdXAlM2RiMmNfaW5kaWFfZ29vZ2xlLWN5YmVyc2VjdXJpdHlfZ29vZ2xlX2N4X2JhdV9iZ19pbl94X3hfbnBsLXNyLXRobV94X2h5Yl94X3hfcHJvZmVzc2lvbmFsLWNlcnRpZmljYXRlc194JTI2cXVlcnlzdHJpbmclM2RhYm91dCUyNTIwaGFja2luZyUyNnRhcmdldGlkJTNka3dkLTIzMzA0MTQ4OTU3NTM5NzglM2Fsb2MtOTAlMjZiaWRtYXRjaHR5cGUlM2RiYiUyNmV4dGVuc2lvbmlkJTNkJTI2bXNjbGtpZCUzZDQzZWIyMDIxZGYyZjEwM2NjZjAxNGFiM2E0MzQzNGM5JTI2dXRtX3Rlcm0lM2R3d3cuY291cnNlcmEub3JnJTI2dXRtX2NvbnRlbnQlM2RiMmNfaW5kaWFfZ29vZ2xlLWN5YmVyc2VjdXJpdHlfZ29vZ2xlX2N4X2JhdV9iZ19pbl94X3hfbnBsLXNyLXRobV94X2h5Yl94X3hfcHJvZmVzc2lvbmFsLWNlcnRpZmljYXRlc194%26rlid%3D43eb2021df2f103ccf014ab3a43434c9&vqd=4-73975214295879818197911546435127406933&iurl=%7B1%7DIG%3D562564D78A894AE2874D7920351B8F2B%26CID%3D396FA700CF486CC423DCB0C4CEB06DFC%26ID%3DDevEx%2C5036.1",
+        "https://www.fortinet.com/resources/cyberglossary/what-is-hacking",
+        "https://en.wikipedia.org/wiki/Hacker",
+        "https://www.geeksforgeeks.org/ethical-hacking/what-is-hacking-definition-types-identification-safety/"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T06:24:31.362Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1787984784851",
+      "topic": "about how should a ai talk with humans",
+      "summary": "Throughout this guide, we'll explore practical techniques and tips for optimizing interactions with AI, revealing how to turn simple requests into intelligent, productive conversations. The ... As AI becomes more prevalent in our personal and professional lives, the more we'll need a way to stand out. In fact, skills like empathy, influence, and the ability to read the room—things AI ...",
+      "keyFacts": [
+        "Throughout this guide, we'll explore practical techniques and tips for optimizing interactions with AI, revealing how to turn simple requests into intelligent, productive conversations. The ...",
+        "As AI becomes more prevalent in our personal and professional lives, the more we'll need a way to stand out. In fact, skills like empathy, influence, and the ability to read the room—things AI ...",
+        "Home Do People Really Talk to AI? Turns Out, Most People Do \"Is it weird if I tell you I cried during an AI chatbot convo?\" Many people ask versions of this, and then keep chatting. Here's what's going on: with AI, users feel less judged, more anonymous, and more in control.",
+        "As artificial intelligence (AI) permeates society and daily life, psychologists are investigating interactions between AI and human cognition, behaviour and values.",
+        "Talking to AI vs humans: AI conversation is getting remarkably good, but there's something fundamentally different about a human who is also affected by the exchange.",
+        "An AI chatbot is a computer program that can talk with people using text or voice. It uses artificial intelligence to understand what you say and reply in a way that makes sense."
+      ],
+      "sourceUrls": [
+        "https://www.researchgate.net/publication/395346494_How_to_Talk_to_an_AI_A_Guide_for_Humans",
+        "https://time.com/article/2026/08/05/how-to-talk-like-a-human-in-the-ai-era/",
+        "https://prelaunch.com/blog/do-people-talk-to-ai",
+        "https://www.nature.com/articles/s44159-025-00517-y"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T06:26:24.851Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1787985091963",
+      "topic": "about the laptop asus vivobook 15 1335u",
+      "summary": "Buy Laptops, Tablets, PC Accessories, HDDs & More. Pay on Delivery. Specs, Tests, and Price of ASUS Vivobook 15 with 1335U, Xe Graphics G7 80 EU, 15.6\", Full HD (1920 x 1080), TN, 512GB SSD, 8GB DDR4, Windows 11 Home, Microsoft Office Home and Student 2021, 1-Year McAfee Anti-Virus",
+      "keyFacts": [
+        "Buy Laptops, Tablets, PC Accessories, HDDs & More. Pay on Delivery.",
+        "Specs, Tests, and Price of ASUS Vivobook 15 with 1335U, Xe Graphics G7 80 EU, 15.6\", Full HD (1920 x 1080), TN, 512GB SSD, 8GB DDR4, Windows 11 Home, Microsoft Office Home and Student 2021, 1-Year McAfee Anti-Virus",
+        "Specs, Tests, and Price of ASUS Vivobook 15 with 1335U, Xe Graphics G7, 15.6\", Full HD (1920 x 1080), IPS, 512GB SSD, 16GB DDR4, No OS",
+        "ASUS Vivobook 15 Stylish, Compact & Durable Turn everyday tasks into something special with Vivobook 15, your essential tool for getting things done easier, anywhere. It's completely user-friendly too, with its 180 ° lay-flat hinge and physical webcam shield.",
+        "Detailed Asus Vivobook 15 Core i5-1335U Review for 2026: 10-core 13th Gen Intel processor, 16GB RAM, 512GB SSD, Full HD display. Best for students and professionals at ₹52,980.",
+        "Amazon.in : asus laptop specifications 1-16 of 525 results for \"asus laptop specifications\" Sort by: Featured Price: Low to High Price: High to Low Avg."
+      ],
+      "sourceUrls": [
+        "https://duckduckgo.com/y.js?ad_domain=amazon.in&ad_provider=bingv7aa&ad_type=txad&click_metadata=6XlPgKOyU6P0ib7LVEpSEcnuQNe2v7KQEpfbpfEuiAj7hWHR3%2D4Wy2pVFaNGruzA3GFUe%2DqpSjau7AKjijVrjZl72DhIZkpWmSKiQdoVeY7UPM0Gb_4QV6_IsiYbyv7069ZCNv2gaaAJg88%2D4Mi0p6M1e_I9CcEsUerW6AylnFA.hYebGbhoZeXvW8IwR3oSVw&rut=2eaa8e0e201f9566ec90da9f5831d67e7597d73a56f0c6ff7b0d8fae44d0cfbe&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8zIwXLY8sj4HugM03OPlgQzVUCUz2v9V_izN72qeKFDaYoQVglEPwpDwlr1Lg2Lm4Oa3lxWCJa3jwjCpiq1SW5Kkp9MuBO0RTdCg11d4lgXv8va5uQXEmnfZ95Y67EQD5PJQcjxMScScb6mGO3q3wIqkd1MwuvOwhVXBAvRupNpYr2tyZCLSdjn46llkD28vactfRzBBts_fv_2Dtex57fhlT4J0%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmluJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkYXN1cyUyYmxhcHRvcCUyYnNwZWNpZmljYXRpb25zJTI2aW5kZXglM2RhcHMlMjZ0YWclM2Rtc25kZXNrc3RkaW4tMjElMjZyZWYlM2RwZF9zbF80MWUzMGtxeTd3X3AlMjZhZGdycGlkJTNkMTMxMzkxODAwMTMyNDg4MSUyNmh2YWRpZCUzZDgyMTIwMTM0NTk0MzQxJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkMTU2NzcxJTI2aHZ0YXJnaWQlM2Rrd2QtODIxMjA3NTI0NDExNzklM2Fsb2MtOTAlMjZoeWRhZGNyJTNkMTYwNzBfMTkzOTI0MSUyNm1jaWQlM2Q4N2ExMTliN2JjMmMzODQ1YmJiMWY5ZTQ3NDliYjlhNyUyNm1zY2xraWQlM2QwMjQ3MDgxYjQ4OTIxZDdjYmYxOTYyODkzNDUyMTk0YQ%26rlid%3D0247081b48921d7cbf1962893452194a&vqd=4-127842214579950060430051413302546880913&iurl=%7B1%7DIG%3D2E8E274F6ADC4E6BA1BA4822F510E67C%26CID%3D02196CFA7DC361AF3CA97B3E7CA16051%26ID%3DDevEx%2C5037.1",
+        "https://laptopmedia.com/laptop-specs/asus-vivobook-15-3964/",
+        "https://laptopmedia.com/laptop-specs/asus-vivobook-15-3478/",
+        "https://www.flipkart.com/asus-vivobook-15-intel-core-i5-13th-gen-1335u-16-gb-512-gb-ssd-windows-11-home-x1504va-nj540ws-thin-light-laptop/p/itm4b84262c1c23a"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T06:31:31.963Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1787985187493",
+      "topic": "who is the president of america",
+      "summary": "The president of the United States is the head of state and head of government of the United States. The president directs the executive branch of the federal government and is the commander-in-chief of the United States Armed Forces. The power of the presidency has grown since the first president, George Washington, took office in 1789. While presidential power has ebbed and flowed over time, the presidency has played an increasing role in American political life since the beginning of the 20th century, carrying over into the 21st century with some expansions during the presidencies of Franklin D. Roosevelt and George W. Bush. In the 21st century, the president is one of the world's most powerful political figures and the leader of a superpower. As the leader of the nation with the largest economy by nominal GDP, the president possesses significant domestic and international hard and soft power. Outline of American politics - The following outline is provided as an overview of and topical guide to American politics: American politics – The politics of the United States.",
+      "keyFacts": [
+        "Outline of American politics - The following outline is provided as an overview of and topical guide to American politics: American politics – The politics of the United States.",
+        "Presidents of the United States",
+        "Presidency of the United States",
+        "After a landslide election victory in 2024, President Donald J. Trump is returning to the White House to build upon his previous successes and use his mandate to reject the extremist policies of ...",
+        "Donald J. Trump is the President of the USA in 2025 after a landslide re-election victory. Explore his achievements, policies, and historic second term.",
+        "President of the United States - Wikipedia Jump to content From Wikipedia, the free encyclopedia Head of state and government For a list of presidents of the United States, see List of presidents of the United States ."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/President_of_the_United_States",
+        "https://duckduckgo.com/Outline_of_American_politics",
+        "https://duckduckgo.com/President_of_the_Continental_Congress",
+        "https://duckduckgo.com/c/Presidents_of_the_United_States"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T06:33:07.493Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1787985265190",
+      "topic": "right now who is the president of america ?",
+      "summary": "Time after time President Trump has defied the odds because he fundamentally believes in the exceptionalism of the American spirit and wants to see our great country succeed. The president of the United States (POTUS) [b] is the head of state and head of government of the United States. The president directs the executive branch of the federal government and is the commander-in-chief of the United States Armed Forces. The power of the presidency has grown [12] since the first president, George Washington, took office in 1789. [6] While presidential power has ebbed ...",
+      "keyFacts": [
+        "Time after time President Trump has defied the odds because he fundamentally believes in the exceptionalism of the American spirit and wants to see our great country succeed.",
+        "Learn who the current president of USA and discover interesting facts about the 47th President, their political party and the eligibility and powers of a president.",
+        "Donald John Trump (born June 14, 1946) is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+        "President Donald J. Trump and Vice President JD Vance are committed to lowering costs for all Americans, securing our borders, unleashing American energy dominance, restoring peace through ...",
+        "Donald J. Trump is the President of the USA in 2025 after a landslide re-election victory. Explore his achievements, policies, and historic second term.",
+        "Trump 45th & 47th President of the United States After a landslide election victory in 2024, President Donald J."
+      ],
+      "sourceUrls": [
+        "https://www.whitehouse.gov/administration/donald-j-trump/",
+        "https://en.wikipedia.org/wiki/President_of_the_United_States",
+        "https://www.jagranjosh.com/general-knowledge/current-president-of-usa-1820008802-1",
+        "https://en.wikipedia.org/wiki/Donald_Trump"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T06:34:25.190Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788005439337",
+      "topic": "what is nasa",
+      "summary": "\"What Is an Author?\" is one of the most important lectures given at the Société française de philosophie on 22 February 1969 by French philosopher, sociologist and historian Michel Foucault. For a contemporary English translation, see the corresponding chapters in Language, Counter-Memory, Practice: Selected Essays and Interviews or Textual Strategies: Perspectives in Post-Structuralist Criticism.\n[T]he author is not an indefinite source of significations which fill a work; the author does not precede the works, he is a certain functional principle by which, in our culture, one limits, excludes, and chooses; in short, by which one impedes the free circulation, the free manipulation, the free composition, decomposition, and recomposition of fiction. In fact, if we are accustomed to presenting the author as a genius, as a perpetual surging of invention, it is because, in reality, we make him function in exactly the opposite fashion. One can say that the author is an ideological product, since we represent him as the opposite of his historically real function. [...] The author is therefore the ideological figure by which one marks the manner in which we fear the proliferation of meaning.",
+      "keyFacts": [
+        "Independent agencies of the United States government",
+        "Organizations based in Washington, D.C.",
+        "NASA.gov brings you the latest news, images and videos from America's space agency, pioneering the future in space exploration, scientific discovery and aeronautics research.",
+        "- Wikipedia Jump to content From Wikipedia, the free encyclopedia 1969 lecture given by Michel Foucault You can help expand this article with text translated from the corresponding article in German .",
+        "(May 2026) Click [show] for important translation instructions.",
+        "Consider adding a topic to this template: there are already 1,993 articles in the main category , and specifying | topic = will aid in categorization."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/What_Is_an_Author%3F",
+        "https://en.wikipedia.org/wiki/NASA",
+        "https://duckduckgo.com/c/Collier_Trophy_recipients",
+        "https://duckduckgo.com/c/Independent_agencies_of_the_United_States_government"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T12:10:39.337Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788005559184",
+      "topic": "about costly pain",
+      "summary": "Chronic primary pain affects millions and carries enormous personal and economic costs. This article compiles 30 research-backed statistics covering prevalence, disability, treatment gaps, opioid use, mental health, and the growing evidence supporting behavioral and brain-based approaches to long-term pain management. Cost of Pain Pain is a major health problem in this country, and it is one of the most common symptoms that prompts people to seek medical care. However, the cost of pain not only includes direct costs associated with doctor's visits, diagnostics and medication, but indirect costs such as lost wages and productivity.1",
+      "keyFacts": [
+        "Chronic pain affects the whole person, draining their resources financially and emotionally. The cost can be extreme.",
+        "Understand pain management costs in 2026 — from first-visit fees to injections, physical therapy, and ongoing treatment. Learn what to expect with and without insurance.",
+        "Discover the cost of chronic pain per person in 2026, including annual medical expenses, lost productivity, healthcare spending, and economic impact statistics.",
+        "Email * Please enter a valid email address Previous Next Please fill out your info to connect with our team* Company name: * This field is required Job title: * This field is required How can we help?",
+        "* This field is required Previous Thank you for your message!",
+        "Something went wrong while submitting the form."
+      ],
+      "sourceUrls": [
+        "https://www.lin.health/insights/chronic-primary-pain-statistics",
+        "https://masspaininitiative.org/files/Cost_of_Pain_Fact_Sheet.pdf",
+        "https://uspainfoundation.org/news/the-financial-and-emotional-cost-of-chronic-pain/",
+        "https://theworlddata.com/chronic-pain-statistics-in-us/"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T12:12:39.184Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788005676796",
+      "topic": "about quantum world",
+      "summary": "Research conducted on about quantum world. Data gathered from web search.",
+      "keyFacts": [
+        "Research conducted on about quantum world. Data gathered from web search."
+      ],
+      "sourceUrls": [],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-29T12:14:36.796Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788100334050",
+      "topic": "about quantum computer",
+      "summary": "IBM quantum computer demo at ITU WTSA 2024 in Delhi Bloch sphere representation of a qubit. The state is a point on the surface of the sphere, partway between the poles, and . A quantum computer is a computer that represents and processes information using quantum states. Quantum computations exploit phenomena such as superposition, interference, and entanglement. Quantum computers have the ... Quantum computing is a rapidly-emerging technology that harnesses the laws of quantum mechanics to solve problems too complex for classical computers.",
+      "keyFacts": [
+        "Quantum computing is a rapidly-emerging technology that harnesses the laws of quantum mechanics to solve problems too complex for classical computers.",
+        "Conclusion Quantum computing harnesses the laws of quantum mechanics for complex problem solving.There are many software and hardware tools like quantum hardware platforms, SDK's, simulators in market that help to execute quantum algorithms.",
+        "A quantum computer is a device that employs properties described by quantum mechanics to enhance computations. Plans for building quantum computers have been proposed; although several demonstrate the fundamental principles, none is beyond the experimental stage.",
+        "Quantum computing technology is complex, getting off the ground and maturing. There is promise of things to come. potentially changing the computing paradigm.",
+        "Quantum computing - Wikipedia Jump to content From Wikipedia, the free encyclopedia Computer hardware technology that uses quantum mechanics IBM quantum computer demo at ITU WTSA 2024 in Delhi Bloch sphere representation of a qubit.",
+        "The state | ψ ⟩ = α | 0 ⟩ + β | 1 ⟩ {\\displaystyle |\\psi \\rangle =\\alpha |0\\rangle +\\beta |1\\rangle } is a point on the surface of the sphere, partway between the poles, | 0 ⟩ {\\displaystyle |0\\rangle } and | 1 ⟩ {\\displaystyle |1\\rangle } ."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Quantum_computing",
+        "https://www.nist.gov/quantum-information-science/quantum-computing-explained",
+        "https://www.ibm.com/think/topics/quantum-computing",
+        "https://www.geeksforgeeks.org/blogs/introduction-quantum-computing/"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-30T14:32:14.057Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788087303421",
+      "topic": "about putin",
+      "summary": "The Prince is a 16th-century political treatise written by the Italian diplomat and political philosopher Niccolò Machiavelli in the form of an instruction guide for new princes. Many commentators have viewed that one of the main themes of The Prince is that immoral acts are sometimes necessary to achieve political glory.",
+      "keyFacts": [
+        "Vladimir Putin is a Russian leader and former KGB officer who has shaped his nation's political landscape for decades with a mix of strategic maneuvers, military aggression against Russia's neighbors, and controversial policies.",
+        "Vladimir Putin took control of Russia as prime minister and president by the early 21st century, his time in power ma...",
+        "One of the most influential figures in modern history, his career has skyrocketed from foreign intelligence officer in the KGB to Russian president.",
+        "Putin, Lukashenko hold talks on Friday at tense point in Ukraine war Reuters, the news and media division of Thomson Reuters, is the world's largest multimedia news provider, reaching billions ...",
+        "Vladimir Putin served as president of Russia from 2000 to 2008 and was re-elected to the presidency in 2012. Learn about his ex-wife and political career.",
+        "The Prince - Wikipedia Jump to content From Wikipedia, the free encyclopedia (Redirected from About Principalities ) Political treatise by Niccolò Machiavelli This article is about the book by Niccolò Machiavelli."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/About_Principalities",
+        "https://en.wikipedia.org/wiki/Vladimir_Putin",
+        "https://www.britannica.com/biography/Vladimir-Putin",
+        "https://www.history.com/articles/vladimir-putin"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-30T10:55:03.421Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788087375510",
+      "topic": "about donald trump",
+      "summary": "Donald John Trump (born June 14, 1946) is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021. Donald Trump is the 45th and 47th president of the United States (2017-21; 2025- ). Following his inauguration on January 20, 2025, Trump became only the second president to serve two nonconsecutive terms, the first being Grover Cleveland (1885-89; 1893-97).",
+      "keyFacts": [
+        "Donald John Trump (born June 14, 1946) is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021.",
+        "Donald Trump is the 45th and 47th president of the United States (2017-21; 2025- ). Following his inauguration on January 20, 2025, Trump became only the second president to serve two nonconsecutive terms, the first being Grover Cleveland (1885-89; 1893-97).",
+        "Donald Trump is the undisputed frontrunner for the Republican presidential nomination in the 2024 election. He is also the defendant in four criminal cases. Bookmark this page to get the latest ...",
+        "Stay informed and read the latest breaking news and updates on Donald Trump from AP News, the definitive source for independent journalism.",
+        "Comprehensive coverage of President Donald Trump and his administration from The Washington Post, including the latest news and in-depth analysis.",
+        "After a landslide election victory in 2024, President Donald J. Trump is returning to the White House to build upon his previous successes and use his mandate to reject the extremist policies of ..."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Donald_Trump",
+        "https://www.britannica.com/biography/Donald-Trump",
+        "https://www.britannica.com/facts/Donald-Trump",
+        "https://www.reuters.com/world/us/donald-trump/"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-08-30T10:56:15.510Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788346310941",
+      "topic": "about epsitne file",
+      "summary": "The Epstein files are a partially released collection of millions of documents, images, videos, and emails related to the activities of American financier and convicted child sex offender Jeffrey Epstein, including his social circle of public figures, politicians, and celebrities. [3] The files include documents collected as evidence in the criminal cases against Epstein and his associates ... This site houses materials responsive under the Epstein Files Transparency Act. This site will be updated if additional documents are identified for release. Some of the library's contents include descriptions of sexual assault. As such, please be advised that certain portions of this library may not be appropriate for all readers.",
+      "keyFacts": [
+        "The Epstein files are documents related to criminal charges of sex trafficking brought against Jeffrey Epstein. His arrest and suicide fomented uproar over who may be named in the documents. This timeline explores a scandal decades in the making.",
+        "Note on Search Functionality: Due to technical limitations and the format of certain materials (e.g., handwritten text), portions of these documents may not be electronically searchable or may produce unreliable search results.",
+        "The complete collection of Jeffrey Epstein documents released by the U.S. House Committee on Oversight and Accountability. 2,897+ documents. 100% public. 100% searchable.",
+        "Read the latest news and analysis of the Epstein files and the world of Jeffrey Epstein.",
+        "Browse and search over 1.3 million released Epstein files and DOJ images across twelve data sets. Fast filtering and full-size document views.",
+        "Epstein files - Wikipedia Jump to content From Wikipedia, the free encyclopedia Files on Jeffrey Epstein and his affiliates For the soundtrack, see The Epstein Files (song) ."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Epstein_files",
+        "https://www.justice.gov/epstein",
+        "https://www.britannica.com/topic/The-Epstein-Files-A-Timeline",
+        "https://govfacts.org/criminal-justice-public-safety/crime-criminal-law/types-of-crimes/the-epstein-files-what-documents-exist-and-what-they-prove/"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-02T10:51:50.941Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788346381123",
+      "topic": "about connection of epstine",
+      "summary": "The convicted child sex offender Jeffrey Epstein cultivated connections with influential individuals and institutions across the globe. [1] Epstein was personally connected with many figures in international business, academia, politics, royalty, entertainment, and other areas. Interactive graph of 1,500+ people connected to Epstein. Click any name to see shared flights, documents, and connections. Filter by politicians, billionaires, celebrities, and more.",
+      "keyFacts": [
+        "The convicted child sex offender Jeffrey Epstein cultivated connections with influential individuals and institutions across the globe. [1] Epstein was personally connected with many figures in international business, academia, politics, royalty, entertainment, and other areas.",
+        "Interactive graph of 1,500+ people connected to Epstein. Click any name to see shared flights, documents, and connections. Filter by politicians, billionaires, celebrities, and more.",
+        "Explore the documented connections in the Epstein network. Evidence-based mapping of associates, financial relationships, flight companions, and co-occurrences across court documents, emails, and financial records.",
+        "An interactive map of the documented and co-reported connections between the 249 people named in the Epstein files. Explore who is linked to whom across DOJ documents and news coverage.",
+        "Explore the documented connections between Jeffrey Epstein and associates through this interactive investigation map.",
+        "Network Explorer Interactive Network Explorer Search a name to highlight connections. Click on a name to bring up a link to more details on that Person. Blue are first degree connections to Epstein, then Green for connections to those people, then orange etc."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Connections_of_Jeffrey_Epstein",
+        "https://epsteinexposed.com/network",
+        "https://en.wikipedia.org/wiki/Epstein_files",
+        "https://epsteinexposed.com/epstein-network"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-02T10:53:01.123Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1788346440268",
+      "topic": "how did epsitne become so rich",
+      "summary": "How Jeffrey Epstein went from being a college dropout to being so rich and powerful is one of the great questions of the scandal. The answer involves charm, hard work, a brazen disregard for the rules, and some luck. Newly released documents are renewing interest in how Jeffrey Epstein amassed his fortune. Here's how he made his money.",
+      "keyFacts": [
+        "How Jeffrey Epstein went from being a college dropout to being so rich and powerful is one of the great questions of the scandal. The answer involves charm, hard work, a brazen disregard for the rules, and some luck.",
+        "Newly released documents are renewing interest in how Jeffrey Epstein amassed his fortune. Here's how he made his money.",
+        "How did Jeffrey Epstein, a college dropout who started off teaching math and physics, make a huge fortune? At least at the beginning, the man from a working-class family in Coney Island, New York ...",
+        "How did the well-connected financier and convicted sex offender Jeffrey Epstein amass such great wealth?",
+        "The convicted sex offender was worth nearly $600 million at his death, thanks mostly to two wealthy billionaire clients—plus generous tax breaks.",
+        "A Limited board member eventually became so troubled by Epstein that he hired Kroll, the private investigations firm, to see what could be unearthed about his past, according to Ed Epstein."
+      ],
+      "sourceUrls": [
+        "https://www.britannica.com/topic/Where-Did-Jeffrey-Epstein-Get-His-Money",
+        "https://www.cbsnews.com/news/how-did-jeffrey-epstein-make-his-money/",
+        "https://en.wikipedia.org/wiki/Jeffrey_Epstein",
+        "https://www.msn.com/en-us/money/companies/how-jeffrey-epstein-became-so-rich/ar-AA1Wrocv"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-02T10:54:00.268Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789187971972",
+      "topic": "gta 5",
+      "summary": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three protagonists—retired bank robber Michael De Santa, street gangster Franklin Clinton, and drug dealer and gunrunner Trevor Philips —and their attempts to commit heists while under pressure from a corrupt government agency and powerful criminals. Players freely roam San Andreas's open-world countryside and fictional city of Los Santos, based on Los Angeles.",
+      "keyFacts": [
+        "Rockstar Advanced Game Engine games",
+        "Video games with user-generated gameplay content",
+        "Now available for PlayStation 5, Xbox Series X|S, and PC Experience entertainment blockbusters, Grand Theft Auto V and GTA Online."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Gta_5",
+        "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+        "https://duckduckgo.com/c/Grand_Theft_Auto_V",
+        "https://duckduckgo.com/c/Rockstar_Advanced_Game_Engine_games"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-12T04:39:31.972Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789187993218",
+      "topic": "gta 6",
+      "summary": "Grand Theft Auto VI is an upcoming action-adventure game developed and published by Rockstar Games. It is due to be the eighth main Grand Theft Auto game, following Grand Theft Auto V (2013), and the sixteenth entry overall. Set within the fictional US state of Leonida, based on Florida, the story follows the romantic criminal duo of Jason Duval and Lucia Caminos. Players will be able to freely roam Leonida's open world, which features the Miami-inspired Vice City.",
+      "keyFacts": [
+        "Dive into the world of GTA VI—an immersive, action-packed experience that brings freedom, story, and chaos together in one unforgettable open-world journey. Incredibly immersive, and larger than ...",
+        "Take a look at Extended Gameplay for GTA 6, the latest entry in the third-person open-world action-adventure Grand Theft Auto franchise developed by Rockstar Games.",
+        "Grand Theft Auto VI is Now Set to Launch November 19, 2026 November 6, 2025 Hi everyone, Grand Theft Auto VI will now release on Thursday, November 19, 2026.",
+        "Take a look at the Extended Look Teaser Trailer for GTA 6 (Grand Theft Auto 6), the latest addition to the open-world action-adventure game developed by Rockstar Games.",
+        "Pre-order today and play Grand Theft Auto VI on XBOX Series X|S November 19, 2026. Experience the biggest, most immersive evolution of the series.",
+        "It is due to be the eighth main Grand Theft Auto game, following Grand Theft Auto V (2013), and the sixteenth entry overall."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Gta_6",
+        "https://www.rockstargames.com/VI",
+        "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI",
+        "https://store.rockstargames.com/game/buy-gta-vi"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-12T04:39:53.218Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789574935886",
+      "topic": "latest news",
+      "summary": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com. Latest News Today: Breaking news on Politics, Business, Sports, Bollywood, Education, Science. Latest News on Politics, India, Current affairs. The Times of India Covers all latest breaking news ...",
+      "keyFacts": [
+        "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.",
+        "Latest News Today: Breaking news on Politics, Business, Sports, Bollywood, Education, Science. Latest News on Politics, India, Current affairs. The Times of India Covers all latest breaking news ...",
+        "Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports.",
+        "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also ...",
+        "Stay updated with the latest news from India and around the world, including live coverage, videos, and photos on NDTV.com.",
+        "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+      ],
+      "sourceUrls": [
+        "https://www.cnn.com/",
+        "https://timesofindia.indiatimes.com/news",
+        "https://www.foxnews.com/",
+        "https://www.bbc.co.uk/news"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-16T16:08:55.886Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789626786706",
+      "topic": "Artificial General Intelligence architectures and reasoning models",
+      "summary": "Artificial General Intelligence April 29, 2026 7 min read Key Theories and Models in AGI Realizing advanced artificial general intelligence rivaling human cognition versatility remains a monumental scientific challenge warranting clear articulation on the theoretical frameworks studied steering possibilities ahead grounded by progress made. Large Language Models (LLMs) have fundamentally transformed the landscape of artificial intelligence , enabling unprecedented capabilities in natural language understanding, generation, and reasoning.",
+      "keyFacts": [
+        "Large Language Models (LLMs) have fundamentally transformed the landscape of artificial intelligence , enabling unprecedented capabilities in natural language understanding, generation, and reasoning.",
+        "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity.",
+        "We also showcase how the Just Think AI platform allows developing specialized AI responsibly today."
+      ],
+      "sourceUrls": [
+        "https://justthink.ai/artificial-general-intelligence/key-theories-and-models-in-agi-reviewing-the-foundational-theories-driving-agi-research",
+        "https://www.researchgate.net/publication/394105821_A_Comprehensive_Overview_towards_AGI_Architectures_Applications_Innovations_and_Future_Directions_in_the_Age_of_Artificial_General_Intelligence",
+        "https://theoriesofanything.com/research/artificial-general-intelligence-architectures-and-challenges",
+        "https://ijctjournal.org/wp-content/uploads/2026/04/Artificial-General-Intelligence-A-Comprehensive-Study-of-Concepts-Models-and-Limitations.pdf"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-17T06:33:06.706Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789632080748",
+      "topic": "Quantum computing quantum supremacy milestones",
+      "summary": "Quantum Computing Timeline Four decades of progress, from Feynman's 1981 thought experiment to 96 error-corrected logical qubits. The complete history of quantum computing milestones. Updated July 2026 In quantum computing, quantum supremacy or quantum advantage is the goal of demonstrating that a programmable quantum computer can solve a problem that no classical computer can solve in any feasible amount of time, irrespective of the usefulness of the problem. [1][2][3] The term was coined by John Preskill in 2011, [1][4] but the concept dates to Yuri Manin 's 1980 [5] and Richard Feynman 's ...",
+      "keyFacts": [
+        "Quantum Computing Timeline Four decades of progress, from Feynman's 1981 thought experiment to 96 error-corrected logical qubits. The complete history of quantum computing milestones. Updated July 2026",
+        "From Planck and Feynman to Google Willow and IBM Nighthawk: a complete, sourced history of quantum computing, every major milestone, person, and breakthrough.",
+        "The achievement of quantum supremacy by Google's Sycamore processor marks an important milestone in the development of quantum computing.",
+        "Quantum computing, a field that once seemed like science fiction, is rapidly becoming a reality. One of the most significant milestones in this journey is the achievement of quantum supremacy, a ...",
+        "Year-by-year history of quantum computing milestones, from Google's 2019 supremacy claim to QuEra's 96 logical qubits in 2026.",
+        "Quantum computing is rapidly evolving, promising to revolutionize various fields. A key milestone in this journey is quantum supremacy, also known as quantum advantage."
+      ],
+      "sourceUrls": [
+        "https://entangledfuture.com/guides/quantum-computing-timeline/",
+        "https://en.wikipedia.org/wiki/Quantum_supremacy",
+        "https://quantumzeitgeist.com/history-of-quantum-computing/",
+        "https://quantumzeitgeist.com/the-road-to-quantum-supremacy-key-milestones-and-challenges/"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-17T08:01:20.748Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789650606779",
+      "topic": "James Webb Space Telescope exoplanet atmospheric discoveries",
+      "summary": "The James Webb Space Telescope has ushered in a new era in exoplanet research. To learn about the diversity of exoplanets and their atmospheres, Webb is continuing to study a range of exoplanets, from hot Jupiters to small rocky planets. NASA's James Webb Space Telescope just scored another first: a molecular and chemical profile of a distant world's skies. While Webb and other space telescopes, including NASA's Hubble and Spitzer, previously have revealed isolated ingredients of this broiling planet's atmosphere, the new readings from Webb provide a full menu of atoms, molecules, and even signs of active chemistry and ...",
+      "keyFacts": [
+        "The James Webb Space Telescope has ushered in a new era in exoplanet research. To learn about the diversity of exoplanets and their atmospheres, Webb is continuing to study a range of exoplanets, from hot Jupiters to small rocky planets.",
+        "Skip to navigation 2026 Telescope Award Announced Learn More James Webb Space Telescope Discoveries Tracker Newsletter Asteroids What Are Asteroids and Why Do They Matter for Earth's Future?",
+        "Astronomers have captured the most dramatic view yet of a planet losing its atmosphere, watching the ultra-hot gas giant WASP-121b for an entire orbit with the James Webb Space Telescope. Instead ..."
+      ],
+      "sourceUrls": [
+        "https://science.nasa.gov/mission/webb/science-overview/science-explainers/webbs-impact-on-exoplanet-research/",
+        "https://science.nasa.gov/missions/webb/nasas-webb-reveals-an-exoplanet-atmosphere-as-never-seen-before/",
+        "https://www.jameswebbdiscovery.com/exoplanets/exoplanet-atmospheres",
+        "https://www.sciencedaily.com/releases/2026/01/260120000311.htm"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-17T13:10:06.779Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789650649889",
+      "topic": "about space x",
+      "summary": "SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets. SpaceX plans to adapt it as a human lander for lunar missions under NASA's Artemis program. [12] In 2026, SpaceX acquired Musk's artificial intelligence company xAI (subsequently operated as the wholly owned subsidiary SpaceXAI), and announced a joint venture with Tesla, Inc. to build Terafab, a large plant for semiconductor device fabrication.",
+      "keyFacts": [
+        "SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.",
+        "SpaceX is the maker of Starship and a private space company known for its International Space Station missions.",
+        "SpaceX is an American aerospace company owned by billionaire and tech entrepreneur Elon Musk. The company creates commercial spacecraft, with the goal of sending humans to the Moon and Mars.",
+        "The latest SpaceX breaking news, comment, reviews and features from the experts at Space",
+        "SpaceX - Wikipedia Jump to content From Wikipedia, the free encyclopedia American spaceflight and AI company This article is about the rocket and spacecraft manufacturer.",
+        "For the British art gallery, see Spacex (art gallery) ."
+      ],
+      "sourceUrls": [
+        "https://www.spacex.com/",
+        "https://en.wikipedia.org/wiki/SpaceX",
+        "https://www.britannica.com/money/SpaceX",
+        "https://www.space.com/18853-spacex.html"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-17T13:10:49.889Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789659361864",
+      "topic": "Clean fusion energy reactors and magnetic confinement",
+      "summary": "Magnetic confinement fusion (MCF) is an approach to generate thermonuclear fusion power that uses magnetic fields to confine fusion fuel in the form of a plasma. Magnetic confinement is one of two major branches of controlled fusion research, along with inertial confinement fusion. Fusion reactions for reactors usually combine light atomic nuclei of deuterium and tritium to form an alpha ... One way of realizing controlled nuclear fusion reactions for the production of energy involves confining a hot plasma in a magnetic field. Here, the physics of magnetic-confinement fusion is ...",
+      "keyFacts": [
+        "One way of realizing controlled nuclear fusion reactions for the production of energy involves confining a hot plasma in a magnetic field. Here, the physics of magnetic-confinement fusion is ...",
+        "Explore the potential of Magnetic Confinement Fusion (MCF) as a clean, safe energy source, delving into the science, challenges, and future of harnessing the power of the stars.",
+        "A team from UT Austin, Los Alamos, and Type One Energy has solved a 70-year-old puzzle in fusion science by creating a method to find and fix magnetic leaks in reactors ten times faster than ...",
+        "Explore the potential of magnetic confinement in nuclear fusion, a clean energy future with efficient, stable energy generation and significant environmental benefits.",
+        "Magnetic confinement is one of two major branches of controlled fusion research, along with inertial confinement fusion .",
+        "Fusion reactions for reactors usually combine light atomic nuclei of deuterium and tritium to form an alpha particle (helium-4 nucleus) and a neutron , where the energy is released in the form of the kinetic energy of the reaction products."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Magnetic_confinement_fusion",
+        "https://www.nature.com/articles/nphys3745",
+        "https://modern-physics.org/magnetic-confinement-fusion/",
+        "https://www.sciencedirect.com/science/article/pii/S2772830726000499"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-17T15:36:01.864Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789659727658",
+      "topic": "narendra modi",
+      "summary": "Narendra Damodardas Modi is an Indian politician who has served as the prime minister of India since 26 May 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanasi. He is a member of the Bharatiya Janata Party (BJP) and of the Rashtriya Swayamsevak Sangh (RSS), a right-wing Hindutva paramilitary volunteer organisation. He is India's third-longest-serving prime minister, and the longest-serving prime minister outside the Indian National Congress.",
+      "keyFacts": [
+        "Opinion polling on the Narendra Modi premiership - A number of opinion polls have been conducted regarding the premiership of Narendra Modi.",
+        "Companions of the Order of Fiji",
+        "Grand Companions of the Order of Logohu",
+        "Narendra Damodardas Modi[a] (born 17 September 1950) is an Indian politician who has served as the prime minister of India since 26 May 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament (MP) for Varanasi.",
+        "Narendra Modi - Wikipedia Jump to content From Wikipedia, the free encyclopedia \"}},\"i\":0}}]}'>Prime Minister of India since 2014 \"Modi\" and \"NaMo\" redirect here.",
+        "For other uses, see Modi (disambiguation) and Namo (disambiguation) ."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Narendra_Modi",
+        "https://duckduckgo.com/c/Narendra_Modi",
+        "https://duckduckgo.com/Opinion_polling_on_the_Narendra_Modi_premiership",
+        "https://duckduckgo.com/c/Leaders_of_the_Lok_Sabha"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-17T15:42:07.658Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789660848720",
+      "topic": "who is the president of uae",
+      "summary": "The president of the United Arab Emirates, or the Raʾīs, is the head of state of the United Arab Emirates. The president and vice presidents are de jure elected every five years by the Federal Supreme Council, and the prime minister of the United Arab Emirates is de jure appointed by the president. De facto, the ruler of the Emirate of Abu Dhabi holds the presidency and the ruler of the Emirate of Dubai holds the premiership. The president is also the commander-in-chief of the UAE Armed Forces. The United Arab Emirates is the only presidential monarchy in the world. Sheikh Zayed bin Sultan Al Nahyan was widely credited with unifying the seven emirates into one federal state. He was the UAE's first president from the formation of the UAE until his death on 2 November 2004. He was succeeded by his son, Sheikh Khalifa bin Zayed, who died in office on 13 May 2022. Vice President of the United Arab Emirates - The vice president of the United Arab Emirates is the deputy head of state of the United Arab Emirates. The office holder will perform all the responsibilities of the President of the United Arab Emirates in the latter's absence for any reason.",
+      "keyFacts": [
+        "Government of the United Arab Emirates",
+        "Presidents of the United Arab Emirates"
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/President_of_the_United_Arab_Emirates",
+        "https://duckduckgo.com/Vice_President_of_the_United_Arab_Emirates",
+        "https://duckduckgo.com/c/Government_of_the_United_Arab_Emirates",
+        "https://duckduckgo.com/c/Presidents_of_the_United_Arab_Emirates"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-17T16:00:48.720Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789738469116",
+      "topic": "Brain-computer interfaces and neural decoding breakthroughs",
+      "summary": "In 2026, brain computer interface systems have crossed the threshold from experimental novelty to practical infrastructure. Millions of individuals worldwide now interact with some form of neural interface technology, whether through medical implants restoring motor function, non-invasive headsets improving workplace focus, or AI-augmented neural decoders translating thought into digital ... Brain - computer interface (BCI) technology offers new treatment options for neurological diseases by restoring or replacing impaired functions, but it also faces challenges such as understanding neural activity patterns and ensuring long - term safety of biomaterials.",
+      "keyFacts": [
+        "Brain - computer interface (BCI) technology offers new treatment options for neurological diseases by restoring or replacing impaired functions, but it also faces challenges such as understanding neural activity patterns and ensuring long - term safety of biomaterials.",
+        "Brain-computer interface progress in 2026. Neuralink human trials, Synchron endovascular approach, Blackrock Microsystems advances, and realistic timelines for clinical BCI applications.",
+        "Brain-computer interface paradigm tasks are usually designed first, then the neural coding under the BCI paradigm is revealed, followed by the extraction of brain signal features from neural coding laws, and finally the neural decoding.",
+        "Read extraordinary research on brain-computer interfaces, brain-to-brain interfaces, and brain-controlled prosthetic devices.",
+        "It is a functioning, commercially viable, and clinically validated domain that is reshaping how humans interact with machines, recover from neurological injury, and augment cognitive performance.",
+        "The convergence of artificial intelligence, advanced materials science, and miniaturized neural sensing has produced a pivotal inflection point."
+      ],
+      "sourceUrls": [
+        "https://www.neuroba.com/post/brain-computer-interfaces-in-2026-the-year-everything-changed",
+        "https://www.sciencedirect.com/science/article/pii/S1571064525001265",
+        "https://applyingai.com/2026/04/transforming-brain-computer-interfaces-neuralinks-2026-breakthroughs-and-market-dynamics/",
+        "https://ui.adsabs.harvard.edu/abs/2025PhLRv..55....1L/abstract"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-18T13:34:29.116Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789738702466",
+      "topic": "instagram",
+      "summary": "Instagram is an American photo and short-form video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tags and locations, view trending content, like photos, and follow other users to add their content to a personal feed. A Meta-operated image-centric social media platform, it is available on iOS, Android, Windows, and the Web. Users can take photos and edit them using built-in filters and other tools, then share them on other social media platforms like Facebook. It supports 33 languages including English, Hindi, Spanish, French, Japanese, and Korean.",
+      "keyFacts": [
+        "Timeline of social media - This page is a timeline of social media. Major launches, milestones, and other major events are included.",
+        "Create an account or log in to Instagram - Share what you're into with the people who get you.",
+        "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world.",
+        "Instagram - Wikipedia Jump to content From Wikipedia, the free encyclopedia Social media platform owned by Meta \"Insta\" and \"The Gram\" redirect here.",
+        "For other uses, see Instagram (disambiguation) , Insta (disambiguation) , and The Gram (disambiguation) ."
+      ],
+      "sourceUrls": [
+        "https://en.wikipedia.org/wiki/Instagram",
+        "https://duckduckgo.com/Criticism_of_Facebook",
+        "https://duckduckgo.com/Dronestagram",
+        "https://duckduckgo.com/Timeline_of_social_media"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-18T13:38:22.466Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1789738735425",
+      "topic": "how to hack instagram",
+      "summary": "The promise of easily hacking into someone's Instagram account can sound tempting to curious users, but it's nothing more than bait for an elaborate scam. Fake \"Instagram Password Hacker\" websites claim to provide quick access to any account, but in reality, they are designed to trick unsuspecting visitors into sharing personal information, downloading malicious files, or completing ... Instagram hacking doesn't always require advanced skills; sometimes, it comes down to exploiting weaknesses in account recovery systems. In one case, researchers showed how accounts could be compromised in minutes using brute-force tactics.",
+      "keyFacts": [
+        "Instagram hacking doesn't always require advanced skills; sometimes, it comes down to exploiting weaknesses in account recovery systems. In one case, researchers showed how accounts could be compromised in minutes using brute-force tactics.",
+        "Discover the hidden dangers lurking on Instagram and learn how to protect your account from hackers! In this video, we dive into the growing issue of Instagram hacking, even with two-factor ...",
+        "The creator does not encourage or condone any illegal activities. Always practice ethical hacking responsibly and ensure compliance with local laws and regulations.",
+        "Discover the rising trend of hackers and how they can access Instagram accounts. Learn essential security tips to protect your profile and ensure online safety.",
+        "Instagram accounts can be hacked in many ways including phishing, cyber attacks, password theft, and third party apps.",
+        "These scams are widespread and continue to ensnare people worldwide."
+      ],
+      "sourceUrls": [
+        "https://malwaretips.com/blogs/instagram-password-hacker-websites/",
+        "https://www.bitdefender.com/en-us/blog/hotforsecurity/how-any-instagram-account-could-be-hacked-in-less-than-10-minutes",
+        "https://factually.co/fact-checks/technology/how-to-secure-instagram-account-protection-tips-d34f4c",
+        "https://www.youtube.com/watch?v=dts0iGqIipo"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-18T13:38:55.425Z",
+      "confidence": 0.95
+    },
+    {
+      "id": "kb-1790140481727",
+      "topic": "Autonomous humanoid robotics and robotic kinematics",
+      "summary": "Humanoid robots, increasingly recognized for their potential to drive economic and social development, have garnered significant attention in recent years. This paper aims to provide a comprehensive overview of the progress, challenges, and future directions in humanoid robotics, with a particular emphasis on essential system components and key technological innovations. Through a review of ... (a) HONDA ASIMO Robot and its associated kinematic diagram in (d), (b) AIST HRP-2 Robot and its associated kinematic diagram in (e), and (c) Fujitsu HOAP-2 Robot and its associated kinematic diagram in (f).",
+      "keyFacts": [
+        "(a) HONDA ASIMO Robot and its associated kinematic diagram in (d), (b) AIST HRP-2 Robot and its associated kinematic diagram in (e), and (c) Fujitsu HOAP-2 Robot and its associated kinematic diagram in (f).",
+        "In humanoid robotics, kinematics is crucial for understanding how joints and limbs move in space and how to control these movements to achieve desired positions and trajectories.",
+        "It then examines kinematic analysis methods for humanoid robots, covering link frames and transformation matrices, forward kinematics, inverse kinematics, and differential kinematic analysis."
+      ],
+      "sourceUrls": [
+        "https://onlinelibrary.wiley.com/doi/full/10.1002/smb2.12008",
+        "https://cw.fel.cvut.cz/b232/_media/courses/hro/lectures/hro2_2024_kinematics1.pdf",
+        "https://arxiv.org/html/2501.02116v1",
+        "https://link.springer.com/chapter/10.1007/978-981-92-0964-4_2"
+      ],
+      "category": "Internet Research",
+      "learnedAt": "2026-09-23T05:14:41.727Z",
+      "confidence": 0.95
+    }
+  ]
+}

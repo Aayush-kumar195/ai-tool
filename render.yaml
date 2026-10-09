@@ -1,0 +1,54 @@
+services:
+  - type: web
+    name: jarvis-cloud
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    maxShutdownDelaySeconds: 30
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22.22.0
+      - key: JARVIS_CLOUD_MODE
+        value: "true"
+      - key: JARVIS_HOST
+        value: "0.0.0.0"
+      - key: JARVIS_WEB_TOKEN
+        generateValue: true
+      - key: JARVIS_RELAY_ENABLED
+        value: "true"
+      - key: JARVIS_RELAY_TOKEN
+        generateValue: true
+      - key: JARVIS_CLOUD_DESKTOP_DEVICE_ID
+        value: windows-main
+      - key: JARVIS_CLOUD_RELAY_WAIT_MS
+        value: "720000"
+      - key: JARVIS_CLOUD_RELAY_POLL_MS
+        value: "750"
+      - key: OLLAMA_ENABLED
+        value: "false"
+      - key: HERMES_ENABLED
+        value: "false"
+      - key: HERMES_MODEL
+        value: gemma4:e2b
+      - key: HERMES_PROVIDER
+        value: custom
+      - key: HERMES_BASE_URL
+        value: http://127.0.0.1:11434/v1
+      - key: HERMES_CONTEXT_LENGTH
+        value: "65536"
+      - key: HERMES_OLLAMA_NUM_CTX
+        value: "65536"
+      - key: HERMES_ALLOW_CLOUD_FALLBACK
+        value: "false"
+      - key: JARVIS_ACTIVITY_ENABLED
+        value: "false"
+      - key: JARVIS_DEVICE_AUTO_REGISTER
+        value: "false"
+      - key: JARVIS_DATA_DIR
+        value: ./data

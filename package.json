@@ -1,0 +1,38 @@
+{
+  "name": "jarvis-ai-agent",
+  "version": "1.3.0",
+  "description": "Futuristic JARVIS smart-home AI operating system and laptop automation agent",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node tests/static.test.js && node tests/ollama-integration.test.js && node tests/ollama-http.test.js && node tests/hermes-bridge.test.js && node tests/activity-agent.test.js && node tests/windows-actions.test.js && node tests/server-load.test.js && node tests/smoke.test.js && node tests/hermes-e2e.test.js && node tests/relay.test.js && node tests/cloud-relay.test.js && node tests/hermes-local-binding.test.js",
+    "test:http": "node tests/http-smoke.test.js",
+    "hermes:check": "node tools/hermes-check.js",
+    "doctor": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/windows-doctor.ps1",
+    "acceptance:windows": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/windows-acceptance.ps1",
+    "hermes:install": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install-hermes.ps1",
+    "hermes:repair": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/repair-hermes.ps1",
+    "test:full": "npm test && npm run test:http",
+    "ollama:check": "node tools/ollama-check.js",
+    "hermes:configure": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/configure-hermes-ollama.ps1",
+    "test:hermes-binding": "node tests/hermes-local-binding.test.js"
+  },
+  "keywords": [
+    "jarvis",
+    "ai-agent",
+    "automation",
+    "speech-recognition",
+    "speech-synthesis",
+    "smart-home"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.2"
+  },
+  "engines": {
+    "node": ">=22.0.0 <23.0.0"
+  }
+}

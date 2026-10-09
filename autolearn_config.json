@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "intervalMinutes": 30,
+  "topics": [
+    "Artificial General Intelligence architectures and reasoning models",
+    "Quantum computing quantum supremacy milestones",
+    "James Webb Space Telescope exoplanet atmospheric discoveries",
+    "Clean fusion energy reactors and magnetic confinement",
+    "Brain-computer interfaces and neural decoding breakthroughs",
+    "Autonomous humanoid robotics and robotic kinematics",
+    "Cybersecurity post-quantum encryption protocols",
+    "space x"
+  ],
+  "currentIndex": 6,
+  "lastRun": "2026-09-23T05:14:41.743Z",
+  "lastLearnedTopic": "Autonomous humanoid robotics and robotic kinematics"
+}
