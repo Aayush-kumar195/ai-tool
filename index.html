@@ -1,60 +1,559 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#06f2fe">
-  <link rel="manifest" href="/mobile/manifest.json">
-  <title>JARVIS Mobile Companion</title>
-  <style>
-    :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
-    body { margin:0; min-height:100vh; background:#020617; color:#f8fafc; }
-    main { max-width:720px; margin:auto; padding:20px; }
-    h1 { letter-spacing:3px; margin:0 0 4px; }
-    .sub { opacity:.65; margin-bottom:18px; }
-    .card { border:1px solid rgba(0,242,254,.18); border-radius:14px; padding:16px; margin:12px 0; background:rgba(15,23,42,.7); }
-    input,button,select { width:100%; box-sizing:border-box; border-radius:10px; border:1px solid rgba(0,242,254,.2); background:#0f172a; color:#fff; padding:12px; margin-top:8px; }
-    button { cursor:pointer; font-weight:700; }
-    .row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-    .status { margin-top:10px; min-height:22px; }
-    pre { white-space:pre-wrap; word-break:break-word; opacity:.85; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STELLER - Advanced Sci-Fi System OS & Companion</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Free Client-Side Neural Face & Emotion Detection -->
+  <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.12/dist/face-api.min.js"></script>
 </head>
 <body>
-  <main>
-    <h1>JARVIS</h1>
-    <div class="sub">Authenticated mobile companion</div>
 
-    <section class="card">
-      <label>Relay URL</label>
-      <input id="relayUrl" placeholder="https://your-jarvis.example.com">
-      <label>Relay token</label>
-      <input id="token" type="password" placeholder="Bearer token configured on JARVIS cloud">
-      <label>Device ID</label>
-      <input id="deviceId" placeholder="Piyush-Phone-1">
-      <label>Device name</label>
-      <input id="deviceName" placeholder="My Phone">
-      <div class="row">
-        <button id="saveBtn">SAVE CONFIG</button>
-        <button id="heartbeatBtn">CONNECT</button>
+  <div class="jarvis-container">
+    
+    <!-- HEADER TELEMETRY -->
+    <header>
+      <div class="system-title">
+        <div class="status-dot" id="statusDot"></div>
+        <h1>STELLER</h1>
+        <div class="system-status-indicator">SYSTEM: <span id="systemStatusText" style="color: var(--primary);">NOMINAL</span></div>
       </div>
-      <div class="status" id="status"></div>
-    </section>
+      
+      <div class="header-telemetry-stats">
+        <div class="stat-item" id="headerUptime">UPTIME: <span>0.0 HR</span></div>
+        <div class="stat-item" id="headerClock">TIME: <span>17:05:42</span></div>
+        <div class="stat-item" id="headerPlatform">HOST: <span>WINDOWS</span></div>
+        <button class="settings-toggle-btn" id="openSettingsBtn" title="Consciousness Settings">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+    </header>
 
-    <section class="card">
-      <label>Desktop task</label>
-      <input id="task" placeholder="Open Downloads and find my latest PDF">
-      <div class="row"><button id="sendBtn">SEND TO DESKTOP</button><button id="screenBtn">DESKTOP SCREENSHOT</button></div>
-      <img id="screen" alt="Desktop screenshot" style="display:none;width:100%;margin-top:12px;border-radius:10px;border:1px solid rgba(0,242,254,.2);">
-      <pre id="result"></pre>
-    </section>
+    <!-- DASHBOARD GRID -->
+    <div class="dashboard-grid">
+      
+      <!-- LEFT COLUMN: SYSTEM LOGISTICS & TELEMETRY -->
+      <div class="hud-column">
+        
+        <!-- System Health Panel -->
+        <div class="hud-panel">
+          <div class="panel-header">
+            <span class="panel-title"><i class="fa-solid fa-server"></i> System Telemetry</span>
+            <span class="panel-sub">HOST</span>
+          </div>
+          <div class="panel-body">
+            <div class="telemetry-list">
+              
+              <!-- CPU Gauge -->
+              <div class="gauge-container">
+                <div class="gauge-info">
+                  <span class="gauge-label">CPU CORE LOAD</span>
+                  <span class="gauge-value" id="cpuVal">0%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" id="cpuFill"></div>
+                </div>
+              </div>
+              
+              <!-- RAM Gauge -->
+              <div class="gauge-container">
+                <div class="gauge-info">
+                  <span class="gauge-label">MEMORY LOAD</span>
+                  <span class="gauge-value" id="ramVal">0%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" id="ramFill"></div>
+                </div>
+              </div>
+              
+              <!-- Disk Gauge -->
+              <div class="gauge-container">
+                <div class="gauge-info">
+                  <span class="gauge-label">STORAGE C: DRIVE</span>
+                  <span class="gauge-value" id="diskVal">0%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" id="diskFill"></div>
+                </div>
+              </div>
 
-    <section class="card">
-      <div><strong>Authorized devices</strong></div>
-      <pre id="devices">Not connected.</pre>
-      <button id="refreshBtn">REFRESH DEVICES</button>
-    </section>
-  </main>
-  <script src="/app.js"></script>
+            </div>
+          </div>
+        </div>
+
+        <!-- CCTV Thermal Feed Scanner -->
+        <div class="hud-panel cctv-scanner-panel">
+          <div class="panel-header">
+            <span class="panel-title"><i class="fa-solid fa-eye"></i> CCTV Perimeter Feed</span>
+            <span class="panel-sub" id="cctvCamLabel">CAM 01: FRONT PORCH</span>
+          </div>
+          <div class="panel-body" style="padding: 10px;">
+            <div class="cctv-viewport">
+              <video id="cctvVideo" autoplay muted playsinline style="display: none;"></video>
+              <canvas id="cctvCanvas"></canvas>
+              <div class="cctv-scanline"></div>
+              <div class="cctv-overlay">
+                <div class="cctv-rec">SYS SCANNING</div>
+                <div class="cctv-info" id="cctvTelemetry">AZM: 142.4° | ELE: 12.8° | LNS: TRML</div>
+              </div>
+            </div>
+            
+            <div class="energy-card">
+              <div class="energy-card-header">
+                <i class="fa-solid fa-bolt"></i> Steller Energy Assessment
+              </div>
+              <div class="energy-card-body" id="energySuggestion">
+                Analyzing domestic load metrics. Smart LED dimming is currently saving 12% grid overhead.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CENTER COLUMN: CORE ARC CORE & LOG TERMINAL -->
+      <div class="hud-column center-column">
+        
+        <!-- Main Core Display -->
+        <div class="hud-panel main-hud-panel">
+          <div class="panel-header" style="position: absolute; top: 0; left: 0; width: 100%; border-bottom: none; background: transparent;">
+            <span class="panel-title" style="opacity: 0.5;">Core Consciousness</span>
+          </div>
+          
+          <div class="hud-core-container">
+            <!-- Concentric HUD rings (SVC rotating layers) -->
+            <svg class="hud-svg-rings ring-clockwise" viewBox="0 0 200 200">
+              <!-- Outer Dashed Ring -->
+              <circle cx="100" cy="100" r="92" fill="none" stroke="var(--primary)" stroke-width="1" stroke-dasharray="8 6" opacity="0.3"/>
+              <!-- Tech Ring blocks -->
+              <circle cx="100" cy="100" r="82" fill="none" stroke="var(--primary)" stroke-width="3" stroke-dasharray="80 30 10 30" opacity="0.5"/>
+            </svg>
+            
+            <svg class="hud-svg-rings ring-counter" viewBox="0 0 200 200">
+              <!-- Inner Dashed Ring -->
+              <circle cx="100" cy="100" r="76" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+              <!-- Tri-Segment block ring -->
+              <circle cx="100" cy="100" r="68" fill="none" stroke="var(--primary)" stroke-width="4" stroke-dasharray="120 40 20 20" opacity="0.6"/>
+            </svg>
+            
+            <svg class="hud-svg-rings ring-fast" viewBox="0 0 200 200">
+              <!-- Core grid circle -->
+              <circle cx="100" cy="100" r="58" fill="none" stroke="var(--secondary)" stroke-width="0.75" stroke-dasharray="2 10" opacity="0.7"/>
+            </svg>
+            
+            <!-- Arc Reactor Orb -->
+            <div class="reactor-center" id="reactorCore" title="Press to Initialize STELLER">
+              <span class="reactor-icon" id="reactorText">OFFLINE</span>
+            </div>
+          </div>
+
+          <div class="assistant-status">
+            <div class="assistant-state-text" id="assistantStateText">STANDBY PROMPT</div>
+            <div class="assistant-prompt-tip" id="assistantTip">Click the Reactor Core to initialize communication</div>
+          </div>
+
+          <!-- Waveform Visualizer -->
+          <div class="waveform-container">
+            <canvas id="waveformCanvas"></canvas>
+          </div>
+        </div>
+
+        <!-- CLI Command / Vocal Log Terminal -->
+        <div class="hud-panel terminal-panel">
+          <div class="panel-header">
+            <span class="panel-title"><i class="fa-solid fa-terminal"></i> Command Terminal Logs</span>
+            <span class="panel-sub">Vocal Transcript</span>
+          </div>
+          <div class="panel-body" style="padding: 10px; display: flex; flex-direction: column;">
+            <div class="terminal-log" id="terminalLog">
+              <div class="log-entry system">
+                <span class="log-time">[17:05:42]</span>
+                <span class="log-msg">STELLER Interface Framework Core v4.8 loaded. Waiting for startup authentication.</span>
+              </div>
+            </div>
+            
+            <!-- Text Override Bar -->
+            <div class="command-input-bar">
+              <input type="text" class="command-text-input" id="cmdInput" placeholder="Enter voice-override instruction (e.g. 'lock', 'notepad')..." autocomplete="off">
+              <button class="command-btn" id="cmdSubmitBtn">EXECUTE</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: SMART HOME IOT CONSOLE -->
+      <div class="hud-column">
+        
+        <!-- Smart Routines Selector -->
+        <div class="hud-panel">
+          <div class="panel-header">
+            <span class="panel-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Automation Routines</span>
+            <span class="panel-sub">MACRO KEYS</span>
+          </div>
+          <div class="panel-body" style="padding: 12px 16px;">
+            <div class="routines-grid">
+              
+              <!-- Wake Up -->
+              <button class="routine-btn" data-routine="wakeup">
+                <span class="routine-name"><i class="fa-solid fa-sun" style="color: #ff9500;"></i> Wake Up</span>
+                <span class="routine-desc">Gentle light, morning brief</span>
+              </button>
+              
+              <!-- Movie Mode -->
+              <button class="routine-btn" data-routine="movie">
+                <span class="routine-name"><i class="fa-solid fa-film" style="color: #0095ff;"></i> Movie Mode</span>
+                <span class="routine-desc">Dim lights, prep display</span>
+              </button>
+              
+              <!-- Gaming Mode -->
+              <button class="routine-btn" data-routine="gaming">
+                <span class="routine-name"><i class="fa-solid fa-gamepad" style="color: #ff0080;"></i> Gaming Mode</span>
+                <span class="routine-desc">Neon setup, high response</span>
+              </button>
+              
+              <!-- Sleep Mode -->
+              <button class="routine-btn" data-routine="sleep">
+                <span class="routine-name"><i class="fa-solid fa-moon" style="color: #ffcc00;"></i> Sleep Mode</span>
+                <span class="routine-desc">Secure locks, ambient audio</span>
+              </button>
+              
+              <!-- Away Mode -->
+              <button class="routine-btn" data-routine="away">
+                <span class="routine-name"><i class="fa-solid fa-house-laptop" style="color: #cbd5e1;"></i> Away Mode</span>
+                <span class="routine-desc">Arm sensors, stand down load</span>
+              </button>
+              
+              <!-- Party Mode -->
+              <button class="routine-btn" data-routine="party">
+                <span class="routine-name"><i class="fa-solid fa-champagne-glasses" style="color: #00ff00;"></i> Party Mode</span>
+                <span class="routine-desc">Dynamic color strobe cycles</span>
+              </button>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart IoT Grid -->
+        <div class="hud-panel" style="flex: 1;">
+          <div class="panel-header">
+            <span class="panel-title"><i class="fa-solid fa-house-signal"></i> Smart Home Devices</span>
+            <span class="panel-sub">IoT BUS NODE</span>
+          </div>
+          <div class="panel-body" style="padding: 12px 16px;">
+            <div class="smart-home-grid">
+              
+              <!-- Living Room Lights -->
+              <div class="device-card" id="card-lights">
+                <div class="device-info">
+                  <span class="device-title">Smart Lights</span>
+                  <span class="device-room">LIVING ROOM</span>
+                </div>
+                <div class="device-slider-container">
+                  <div class="slider-row">
+                    <input type="range" class="device-range" id="slider-lights" min="10" max="100" value="80">
+                    <span class="slider-val" id="val-lights">80%</span>
+                  </div>
+                </div>
+                <div class="device-control-row">
+                  <span class="device-state-label" id="lbl-lights">OFF</span>
+                  <label class="switch">
+                    <input type="checkbox" id="switch-lights">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Air Conditioning -->
+              <div class="device-card" id="card-ac">
+                <div class="device-info">
+                  <span class="device-title">Climate AC</span>
+                  <span class="device-room">THERMOSTAT</span>
+                </div>
+                <div class="device-slider-container">
+                  <div class="slider-row">
+                    <input type="range" class="device-range" id="slider-ac" min="16" max="30" value="22">
+                    <span class="slider-val" id="val-ac">22°C</span>
+                  </div>
+                </div>
+                <div class="device-control-row">
+                  <span class="device-state-label" id="lbl-ac">OFF</span>
+                  <label class="switch">
+                    <input type="checkbox" id="switch-ac">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Living Room Television -->
+              <div class="device-card" id="card-tv">
+                <div class="device-info">
+                  <span class="device-title">Stark TV</span>
+                  <span class="device-room">ENTERTAINMENT</span>
+                </div>
+                <div class="device-slider-container">
+                  <div class="slider-row">
+                    <input type="range" class="device-range" id="slider-tv" min="1" max="100" value="45">
+                    <span class="slider-val" id="val-tv">CH 45</span>
+                  </div>
+                </div>
+                <div class="device-control-row">
+                  <span class="device-state-label" id="lbl-tv">OFF</span>
+                  <label class="switch">
+                    <input type="checkbox" id="switch-tv">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Audio Sound System -->
+              <div class="device-card" id="card-speakers">
+                <div class="device-info">
+                  <span class="device-title">Surround Sound</span>
+                  <span class="device-room">SPEAKERS</span>
+                </div>
+                <div class="device-slider-container">
+                  <div class="slider-row">
+                    <input type="range" class="device-range" id="slider-speakers" min="0" max="100" value="65">
+                    <span class="slider-val" id="val-speakers">65%</span>
+                  </div>
+                </div>
+                <div class="device-control-row">
+                  <span class="device-state-label" id="lbl-speakers">OFF</span>
+                  <label class="switch">
+                    <input type="checkbox" id="switch-speakers">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Living Room Curtains -->
+              <div class="device-card" id="card-curtains">
+                <div class="device-info">
+                  <span class="device-title">Smart Curtains</span>
+                  <span class="device-room">WINDOW</span>
+                </div>
+                <div class="device-control-row">
+                  <span class="device-state-label" id="lbl-curtains">OPENED</span>
+                  <label class="switch">
+                    <input type="checkbox" id="switch-curtains" checked>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Secure Door Locks -->
+              <div class="device-card" id="card-locks">
+                <div class="device-info">
+                  <span class="device-title">Front Door</span>
+                  <span class="device-room">LOCK SET</span>
+                </div>
+                <div class="device-control-row">
+                  <span class="device-state-label" id="lbl-locks" style="color: var(--alert);">SECURED</span>
+                  <label class="switch">
+                    <input type="checkbox" id="switch-locks" checked>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- GLASSMORPHIC SETTINGS MODAL: LLM API BRIDGE -->
+    <div class="settings-overlay" id="settingsOverlay">
+      <div class="settings-card">
+        <div class="panel-header">
+          <span class="panel-title"><i class="fa-solid fa-brain"></i> Consciousness Settings</span>
+          <span class="panel-sub">AI BRIDGE</span>
+        </div>
+        <div class="settings-body">
+          
+          <div class="settings-group">
+            <span class="settings-label">Consciousness Bridge</span>
+            <span class="settings-desc">Enable this option to connect STELLER to its configured AI brain. Local Gemma 4 E2B provides reasoning and conversation, while Hermes Agent remains the separate computer-execution layer.</span>
+            <div class="settings-row" style="margin-top: 6px;">
+              <span class="settings-label" style="font-size: 0.65rem; color: var(--text-muted);">ACTIVE LLM SYNAPSE</span>
+              <label class="switch">
+                <input type="checkbox" id="aiBridgeActive" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <label class="settings-label" for="apiProviderSelect">Active AI Provider</label>
+            <select class="settings-input" id="apiProviderSelect" style="background: black; width: 100%;">
+              <option value="ollama">Local Gemma 4 E2B (Ollama Brain)</option>
+              <option value="hermes">Hermes Agent (Computer Execution)</option>
+              <option value="gemini">Google Gemini (Legacy)</option>
+              <option value="openai">OpenAI / Compatible API</option>
+              <option value="openrouter">OpenRouter (Uncensored / Open Models)</option>
+              <option value="groq">Groq Llama 3 (Ultra-Fast)</option>
+              <option value="huggingface">Hugging Face Serverless</option>
+            </select>
+            <span class="settings-desc" style="color: var(--text-muted);">Select the AI model engine that powers Steller's cognitive reasoning.</span>
+          </div>
+
+          <!-- Local Ollama / Gemma Brain -->
+          <div class="settings-group api-provider-fields" id="field-ollama" style="display: none;">
+            <label class="settings-label" for="ollamaModelInput">Local Brain Model</label>
+            <input type="text" class="settings-input" id="ollamaModelInput" value="gemma4:e2b" placeholder="gemma4:e2b">
+            <span class="settings-desc">JARVIS uses your local Ollama runtime for reasoning and conversation. Model status: <span id="ollamaStatus" style="font-weight: 700; color: var(--secondary);">CHECKING...</span></span>
+          </div>
+
+          <!-- Hermes Agent -->
+          <div class="settings-group api-provider-fields" id="field-hermes">
+            <label class="settings-label" for="hermesModelInput">Hermes Agent Model</label>
+            <input type="text" class="settings-input" id="hermesModelInput" placeholder="Leave blank to use Hermes default model">
+            <span class="settings-desc">JARVIS uses the locally installed Hermes Agent CLI with Computer Use. Status: <span id="hermesStatus" style="font-weight: 700; color: var(--secondary);">CHECKING...</span></span>
+          </div>
+
+          <!-- Gemini Fields -->
+          <div class="settings-group api-provider-fields" id="field-gemini">
+            <label class="settings-label" for="geminiKeyInput">Gemini API Key</label>
+            <input type="password" class="settings-input" id="geminiKeyInput" placeholder="Enter Gemini API key...">
+            <span class="settings-desc" style="color: var(--text-muted);">Acquire free keys via Google AI Studio.</span>
+          </div>
+
+          <!-- OpenAI Fields -->
+          <div class="settings-group api-provider-fields" id="field-openai" style="display: none;">
+            <label class="settings-label" for="openaiKeyInput">OpenAI API Key</label>
+            <input type="password" class="settings-input" id="openaiKeyInput" placeholder="sk-...">
+            <label class="settings-label" for="openaiModelInput" style="margin-top: 8px;">Model Name</label>
+            <input type="text" class="settings-input" id="openaiModelInput" placeholder="e.g., gpt-4o, gpt-3.5-turbo">
+            <span class="settings-desc" style="color: var(--text-muted);">Supports any OpenAI-compatible API endpoint if routed via server.js.</span>
+          </div>
+
+          <!-- OpenRouter Fields -->
+          <div class="settings-group api-provider-fields" id="field-openrouter" style="display: none;">
+            <label class="settings-label" for="openrouterKeyInput">OpenRouter API Key</label>
+            <input type="password" class="settings-input" id="openrouterKeyInput" placeholder="sk-or-...">
+            <label class="settings-label" for="openrouterModelInput" style="margin-top: 8px;">Model Name</label>
+            <input type="text" class="settings-input" id="openrouterModelInput" placeholder="e.g., meta-llama/llama-3-8b-instruct:free, undi95/toppy-m-7b:free">
+            <span class="settings-desc" style="color: var(--text-muted);">Supports uncensored, open-source, and specialty models.</span>
+          </div>
+
+          <!-- Groq Fields -->
+          <div class="settings-group api-provider-fields" id="field-groq" style="display: none;">
+            <label class="settings-label" for="groqKeyInput">Groq API Key</label>
+            <input type="password" class="settings-input" id="groqKeyInput" placeholder="gsk_...">
+            <label class="settings-label" for="groqModelInput" style="margin-top: 8px;">Model Name</label>
+            <input type="text" class="settings-input" id="groqModelInput" placeholder="e.g., llama3-8b-8192, llama3-70b-8192">
+            <span class="settings-desc" style="color: var(--text-muted);">Provides high-speed processing capabilities.</span>
+          </div>
+
+          <!-- Hugging Face Fields -->
+          <div class="settings-group api-provider-fields" id="field-huggingface" style="display: none;">
+            <label class="settings-label" for="huggingfaceKeyInput">Hugging Face API Key</label>
+            <input type="password" class="settings-input" id="huggingfaceKeyInput" placeholder="hf_...">
+            <label class="settings-label" for="huggingfaceModelInput" style="margin-top: 8px;">Model Name / Repo ID</label>
+            <input type="text" class="settings-input" id="huggingfaceModelInput" placeholder="e.g., meta-llama/Meta-Llama-3-8B-Instruct">
+            <span class="settings-desc" style="color: var(--text-muted);">Supports serverless chat models hosted on Hugging Face Hub.</span>
+          </div>
+
+          <div class="settings-group">
+            <span class="settings-label">Empathy Persona Level</span>
+            <span class="settings-desc">Customizes the degree of empathetic and philosophical counseling Steller provides offline if the API bridge is inactive.</span>
+            <select class="settings-input" id="empathyLevelSelect" style="background: black;">
+              <option value="butler">LOYAL BUTLER (Polite, attentive, professional)</option>
+              <option value="friend" selected>BEST FRIEND (Empathetic, highly philosophical, warm)</option>
+              <option value="clinical">DIAGNOSTIC (Pragmatic, logical, metric-focused)</option>
+            </select>
+          </div>
+
+          <div class="settings-group">
+            <span class="settings-label">Vocal Synthesizer Voice</span>
+            <select class="settings-input" id="voiceSelect" style="background: black; max-width: 100%;">
+              <option value="">Detecting System Voices...</option>
+            </select>
+            <span class="settings-desc">Pick from standard speaker voices installed locally on your operating system.</span>
+          </div>
+
+          <div class="settings-group">
+            <div class="settings-row">
+              <span class="settings-label">Vocal Cadence (Rate)</span>
+              <span class="settings-label" id="lblVoiceRate" style="color: var(--primary);">1.00x</span>
+            </div>
+            <input type="range" class="device-range" id="voiceRateInput" min="0.6" max="1.8" step="0.02" value="1.00" style="background: rgba(255,255,255,0.08); height: 4px; outline: none; border-radius: 2px;">
+          </div>
+
+          <div class="settings-group">
+            <div class="settings-row">
+              <span class="settings-label">Vocal Deepness (Pitch)</span>
+              <span class="settings-label" id="lblVoicePitch" style="color: var(--primary);">1.00x</span>
+            </div>
+            <input type="range" class="device-range" id="voicePitchInput" min="0.5" max="1.5" step="0.02" value="1.00" style="background: rgba(255,255,255,0.08); height: 4px; outline: none; border-radius: 2px;">
+          </div>
+
+          <!-- Camera & Emotion Detection Settings (Feature 1) -->
+          <div class="settings-group">
+            <span class="settings-label">Perimeter Optical Scanner (Webcam)</span>
+            <span class="settings-desc">Access webcam feed on CCTV perimeter display and perform real-time facial emotion detection to adapt response tone. Default is off (requests permission only when enabled).</span>
+            <div class="settings-row" style="margin-top: 6px;">
+              <span class="settings-label" style="font-size: 0.65rem; color: var(--text-muted);">CAMERA EMOTION SCANNER</span>
+              <label class="switch">
+                <input type="checkbox" id="cameraActiveInput">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="settings-row" style="margin-top: 8px; align-items: center;">
+              <span class="settings-label" style="font-size: 0.65rem; color: var(--text-muted);">HOST FACE RECOGNITION: <span id="hostEnrollStatus">NOT ENROLLED</span></span>
+              <button class="command-btn" id="enrollHostBtn" style="font-size: 0.65rem; padding: 0 10px;" title="Enable the camera scanner and look straight at it, then click to register your face as the recognized host">ENROLL AS HOST</button>
+            </div>
+          </div>
+
+          <!-- Autonomous Background Web-Learning (Feature 3) -->
+          <div class="settings-group">
+            <span class="settings-label">Autonomous Web-Learning Core</span>
+            <span class="settings-desc">Automatically research and index queued topics in the background from DuckDuckGo & Wikipedia into the knowledge core.</span>
+            <div class="settings-row" style="margin-top: 6px;">
+              <span class="settings-label" style="font-size: 0.65rem; color: var(--text-muted);">BACKGROUND AUTO-LEARN</span>
+              <label class="switch">
+                <input type="checkbox" id="autoLearnActiveInput">
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div style="margin-top: 8px;">
+              <span class="settings-label" style="font-size: 0.65rem; color: var(--text-muted);">TOPIC RESEARCH QUEUE</span>
+              <div class="command-input-bar" style="margin-top: 4px;">
+                <input type="text" class="command-text-input" id="newTopicInput" placeholder="Add topic (e.g. 'SpaceX Starship')..." style="font-size: 0.7rem; padding: 6px 10px;">
+                <button class="command-btn" id="addTopicBtn" style="font-size: 0.65rem; padding: 0 10px;">ENQUEUE</button>
+              </div>
+              <button class="command-btn" id="runAutoLearnBtn" style="width: 100%; margin-top: 6px; font-size: 0.65rem; padding: 7px 10px;">RUN RESEARCH NOW</button>
+              <div id="topicQueueList" class="memory-list-container" style="max-height: 110px; overflow-y: auto; background: rgba(0,0,0,0.4); border: 1px solid rgba(var(--primary-rgb), 0.15); border-radius: 4px; padding: 6px; margin-top: 6px; font-size: 0.7rem; color: var(--text-primary); line-height: 1.4;">
+                <span style="color: var(--text-muted); font-style: italic;">Loading topic queue...</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <span class="settings-label">Persistent Memory Core</span>
+            <span class="settings-desc">Details STELLER has remembered about you from past discussions.</span>
+            <div id="memoryListContainer" class="memory-list-container" style="max-height: 120px; overflow-y: auto; background: rgba(0,0,0,0.4); border: 1px solid rgba(var(--primary-rgb), 0.15); border-radius: 4px; padding: 8px; margin-top: 6px; font-size: 0.75rem; color: var(--text-primary); line-height: 1.4;">
+              <span class="no-memories-text" style="color: var(--text-muted); font-style: italic;">No memories saved yet.</span>
+            </div>
+            <button class="settings-btn-clear-memories" id="clearMemoriesBtn" style="background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); color: #fca5a5; font-family: 'Orbitron', sans-serif; font-size: 0.65rem; font-weight: bold; padding: 6px 12px; border-radius: 4px; cursor: pointer; margin-top: 8px; transition: all 0.3s ease; width: 100%; letter-spacing: 1px;">CLEAR MEMORY BANK</button>
+          </div>
+
+          <div class="settings-actions">
+            <button class="settings-btn-close" id="closeSettingsBtn">CANCEL</button>
+            <button class="settings-btn-save" id="saveSettingsBtn">SAVE SYNAPSE</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
