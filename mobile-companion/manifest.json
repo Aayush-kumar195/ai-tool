@@ -1,0 +1,9 @@
+{
+  "name": "JARVIS Mobile Companion",
+  "short_name": "JARVIS",
+  "start_url": "/mobile/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#06f2fe",
+  "description": "Authenticated mobile companion for JARVIS desktop relay tasks."
+}

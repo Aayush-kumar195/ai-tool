@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#06f2fe">
+  <link rel="manifest" href="/mobile/manifest.json">
+  <title>JARVIS Mobile Companion</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
+    body { margin:0; min-height:100vh; background:#020617; color:#f8fafc; }
+    main { max-width:720px; margin:auto; padding:20px; }
+    h1 { letter-spacing:3px; margin:0 0 4px; }
+    .sub { opacity:.65; margin-bottom:18px; }
+    .card { border:1px solid rgba(0,242,254,.18); border-radius:14px; padding:16px; margin:12px 0; background:rgba(15,23,42,.7); }
+    input,button,select { width:100%; box-sizing:border-box; border-radius:10px; border:1px solid rgba(0,242,254,.2); background:#0f172a; color:#fff; padding:12px; margin-top:8px; }
+    button { cursor:pointer; font-weight:700; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .status { margin-top:10px; min-height:22px; }
+    pre { white-space:pre-wrap; word-break:break-word; opacity:.85; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>JARVIS</h1>
+    <div class="sub">Authenticated mobile companion</div>
+
+    <section class="card">
+      <label>Relay URL</label>
+      <input id="relayUrl" placeholder="https://your-jarvis.example.com">
+      <label>Relay token</label>
+      <input id="token" type="password" placeholder="Bearer token configured on JARVIS cloud">
+      <label>Device ID</label>
+      <input id="deviceId" placeholder="Piyush-Phone-1">
+      <label>Device name</label>
+      <input id="deviceName" placeholder="My Phone">
+      <div class="row">
+        <button id="saveBtn">SAVE CONFIG</button>
+        <button id="heartbeatBtn">CONNECT</button>
+      </div>
+      <div class="status" id="status"></div>
+    </section>
+
+    <section class="card">
+      <label>Desktop task</label>
+      <input id="task" placeholder="Open Downloads and find my latest PDF">
+      <div class="row"><button id="sendBtn">SEND TO DESKTOP</button><button id="screenBtn">DESKTOP SCREENSHOT</button></div>
+      <img id="screen" alt="Desktop screenshot" style="display:none;width:100%;margin-top:12px;border-radius:10px;border:1px solid rgba(0,242,254,.2);">
+      <pre id="result"></pre>
+    </section>
+
+    <section class="card">
+      <div><strong>Authorized devices</strong></div>
+      <pre id="devices">Not connected.</pre>
+      <button id="refreshBtn">REFRESH DEVICES</button>
+    </section>
+  </main>
+  <script src="/mobile/app.js"></script>
+</body>
+</html>
