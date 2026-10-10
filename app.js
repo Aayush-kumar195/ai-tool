@@ -27,7 +27,7 @@ window.fetch = async function jarvisAuthenticatedFetch(input, init = {}) {
     let prompt = true;
     try { const data = await response.clone().json(); prompt = /access token|authenticated jarvis client/i.test(String(data?.error || '')); } catch {}
     if (prompt) {
-      if (response.status === 403 && saved) localStorage.removeItem(JARVIS_WEB_TOKEN_KEY);
+      if (saved) localStorage.removeItem(JARVIS_WEB_TOKEN_KEY);
       const token = await requestJarvisWebToken();
       if (token) { headers.set('Authorization', `Bearer ${token}`); response = await nativeFetch(input, { ...init, headers }); }
     }
